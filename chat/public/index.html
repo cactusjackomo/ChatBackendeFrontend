@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NexioChat</title>
+</head>
+<body>
+<h1 class="title">NexioChat</h1>
+<div id="clients-total">Total Clients: 0</div>
+
+<div class="main">
+    <ul class="message-container" id="message-container">
+
+    </ul>
+
+    <form class="message-form" id="message-form">
+        <input
+                type="text"
+                name="message"
+                id="message-input"
+                class="message-input"
+                placeholder="Type a message..."
+                autocomplete="off"
+        />
+        <div class="v-v-divider"></div>
+        <button type="submit" class="send-button">Send</button>
+    </form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
