@@ -19,6 +19,7 @@ const io = new Server(server, {
 
 
 const publicPath = path.join(__dirname, 'public');
+console.log(`Cartella pubblica: ${publicPath}`); //per vedere la cartella pubblica
 
 
 app.use((req, res, next) => {
